@@ -8,6 +8,21 @@
 
         racer1.StartRace();
         racer2.StartRace();
-        racer3.StartRace();   
+        racer3.StartRace();
+
+        try
+        {
+            await Task.WhenAll(
+                racer1.StartRaceAsync(),
+                racer2.StartRaceAsync(),
+                racer3.StartRaceAsync()
+            );
+            Console.WriteLine($"All racers complete!");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Something went terribly wrong\nError message:{ex.Message}");
+        }
+
     }
 }
