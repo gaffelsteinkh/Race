@@ -6,10 +6,11 @@
         Racer racer2 = new ("Goggen", 5, 89);
         Racer racer3 = new ("vanja", 5, 143);
 
+    /*
         racer1.StartRace();
         racer2.StartRace();
         racer3.StartRace();
-
+    */
         try
         {
             await Task.WhenAll(

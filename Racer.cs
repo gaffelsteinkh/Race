@@ -4,7 +4,7 @@ using System.Diagnostics;
 
 public class Racer(string racerName, int laps, int delayMS)
 {
-    public void StartRace()
+   /* public void StartRace()
     {
         Stopwatch timer = Stopwatch.StartNew();
 
@@ -16,7 +16,7 @@ public class Racer(string racerName, int laps, int delayMS)
         timer.Stop();
 
         Console.WriteLine($"{racerName} finished all laps in: {timer.ElapsedMilliseconds}ms");
-    }
+    }*/
     public async Task StartRaceAsync()
     {
         Stopwatch timer = Stopwatch.StartNew();
